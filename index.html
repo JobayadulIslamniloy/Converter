@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Currancy Converter</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'PT Sans', sans-serif;
+        }
+        
+        body {
+            height: 100vh;
+            background: #00ff45;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        
+        .form {
+            width: 300px;
+        }
+        
+        h1 {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+        
+        .form select {
+            border: none;
+            width: 100%;
+            padding: 8px 10px;
+            border-radius: 3px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .form input {
+            border: none;
+            width: 100%;
+            padding: 8px 10px;
+            border-radius: 3px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            display: block;
+        }
+
+        .credit {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display: block;
+            background: #fff;
+            padding: 8px;
+            border-radius: 3px;
+        }
+
+        @media only screen and (max-width: 576px) {
+            .form {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Form Area Start -->
+    <div class="form">
+       <h1>Currancy Converter</h1>
+        <!-- Form First Row -->
+        <div class="form-group">
+            <select id="currancyOne" onchange="convert()" onclick="convert()">
+                <option value="1">Taka</option>
+                <option value="2">Dollar</option>
+                <option value="3">INR</option>
+                <option value="4">PKR</option>
+            </select>
+            <input type="number" id="valueOne" oninput="convert()" placeholder="Type Value">
+        </div>
+        <!-- Form Second Row -->
+        <div class="form-group">
+            <select id="currancyTwo" onchange="convert()" onclick="convert()">
+                <option value="1">Taka</option>
+                <option value="2">Dollar</option>
+                <option value="3">INR</option>
+                <option value="4">PKR</option>
+            </select>
+            <input type="number" id="valueTwo" oninput="convert()" placeholder="Type Value" readonly>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+        function convert(){
+            var currancyOne = document.getElementById("currancyOne").value;
+            var valueOne = document.getElementById("valueOne").value;
+            var currancyTwo = document.getElementById("currancyTwo").value;
+            var valueTwo = document.getElementById("valueTwo").value;
+
+            var output = document.getElementById("valueTwo");
+            output.value;
+
+            if (currancyOne == currancyTwo) {
+                output.value = valueOne * 1;
+            } 
+            if (currancyOne == 1 && currancyTwo == 2) {
+                output.value = valueOne * 0.012;
+            }
+            if (currancyOne == 1 && currancyTwo == 3) {
+                output.value = valueOne * 0.86;
+            }
+            if (currancyOne == 1 && currancyTwo == 4) {
+                output.value = valueOne * 1.84;
+            }
+
+            if (currancyOne == 2 && currancyTwo == 1) {
+                output.value = valueOne * 84.85;
+            }
+            if (currancyOne == 2 && currancyTwo == 3) {
+                output.value = valueOne * 73.23;
+            }
+            if (currancyOne == 2 && currancyTwo == 4) {
+                output.value = valueOne * 155.90;
+            }
+
+            if (currancyOne == 3 && currancyTwo == 1) {
+                output.value = valueOne * 1.16;
+            }
+            if (currancyOne == 3 && currancyTwo == 2) {
+                output.value = valueOne * 0.014;
+            }
+            if (currancyOne == 3 && currancyTwo == 4) {
+                output.value = valueOne * 2.13;
+            }
+
+            if (currancyOne == 4 && currancyTwo == 1) {
+                output.value = valueOne * 0.54;
+            }
+            if (currancyOne == 4 && currancyTwo == 2) {
+                output.value = valueOne * 0.0064;
+            }
+            if (currancyOne == 4 && currancyTwo == 3) {
+                output.value = valueOne * 0.47;
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
